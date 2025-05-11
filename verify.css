@@ -1,0 +1,155 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Central container styling with box shadow */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Smooth input field style */
+input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 2px solid #00e6ac;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated button style */
+button {
+    padding: 15px 30px;
+    background-color: #00e6ac;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 230, 172, 0.4);
+}
+
+button:hover {
+    background-color: #00c994;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 230, 172, 0.6);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Styling the result section with color changes */
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Show result */
+#result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+span {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+span[style*="green"] {
+    background-color: rgba(0, 230, 172, 0.1);
+}
+
+span[style*="red"] {
+    background-color: rgba(255, 69, 58, 0.1);
+}
+
+span[style*="orange"] {
+    background-color: rgba(255, 159, 10, 0.1);
+}
+
+/* Central container styling */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 2px solid #00e6ac;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #00e6ac;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 230, 172, 0.4);
+}
+
+button:hover {
+    background-color: #00c994;
+    transform: translateY(-5px);
+}
+
